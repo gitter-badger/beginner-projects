@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>01-stoic-quotes</title>
-    <link rel="stylesheet" src="./stylesheet.css">
+    <title>01-quote-switcher</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- goes with version one, <p id="quote"></p> -->
-    <p><blockquote></blockquote><cite></cite></p>
-    <p><button>Load a new quote.</button></p>
-    <!-- get random values from array -->
-
+    <div id="content">
+        <p><blockquote></blockquote><cite></cite></p>
+        <p><button>Load a new quote</button></p>
+    </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- version two, with jQuery, loads both quote and citation -->
-    <script src="./quote_switch.js"></script>
+    <script src="quote_switch.js"></script>
 </body>
 </html>
