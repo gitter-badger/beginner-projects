@@ -21,4 +21,4 @@ i am currently working on this, i have the functionality i want at the most basi
 - [X] wrapped the quote randomizer in a function.
 - [X] add timed randomizer.
 - [X] update stylesheet for less ugliness.
-- - [ ] update stylesheet for even less ugliness.
+  - [ ] update stylesheet for even less ugliness.
