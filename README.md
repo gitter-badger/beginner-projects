@@ -19,5 +19,6 @@ i am currently working on this, i have the functionality i want at the most basi
 #### todo:
 - [X] get version 0.1 going, basic functionality.
 - [X] wrapped the quote randomizer in a function.
-- [ ] add timed randomizer.
-- [ ] update stylesheet for less ugliness.
+- [X] add timed randomizer.
+- [X] update stylesheet for less ugliness.
+- - [ ] update stylesheet for even less ugliness.
