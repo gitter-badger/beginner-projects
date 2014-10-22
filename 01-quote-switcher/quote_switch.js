@@ -8,12 +8,12 @@ quotes.push({"content": "Don't cry because it's over, smile because it happened.
 quotes.push({"content": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", "cite": "Albert Einstein"});
 quotes.push({"content": "If you tell the truth, you don't have to remember anything.", "cite": "Mark Twain"});
 
-// finally begin jQuery
-// var count = 0;
-$('button').click(function () {
-    var random = Math.floor(Math.random() * quotes.length);
-    // picks a random number based on the length of the quote array.
-    // var random MUST be local, otherwise random value will be static and not dynamic to the click.
-    $('blockquote').text(quotes[random]['content']); // sticks the content into the blockquote.
-    $('cite').text(quotes[random]['cite']); // sticks the citation into the cite.
-});
+var randomQuote = function(){
+  var random = Math.floor(Math.random() * quotes.length);
+  // picks a random number based on the length of the quote array.
+  // var random MUST be local, otherwise random value will be static and not dynamic to the click.
+  $('blockquote').text(quotes[random]['content']); // sticks the content into the blockquote.
+  $('cite').text(quotes[random]['cite']); // sticks the citation into the cite.
+};
+
+setInterval(randomQuote, 10000);

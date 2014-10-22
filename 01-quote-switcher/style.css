@@ -1,3 +1,27 @@
 body {
-    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  background: #FFF78C;
+  color: #29262B;
+}
+
+#content {
+  margin: 0 auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 100px;
+  width: 400px;
+  padding: 10px;
+}
+
+h1 {
+  text-shadow: 1px 1px #8DA59D;
+}
+
+/* Glyph, by Harry Roberts */
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
 }
