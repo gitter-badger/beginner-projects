@@ -18,6 +18,4 @@ i am currently working on this, i have the functionality i want at the most basi
 
 #### todo:
 - [X] get version 0.1 going, basic functionality.
-- [ ] load the quotes after 5 seconds. (http://stackoverflow.com/questions/3138756/jquery-repeat-function-every-60-seconds)
-- [ ] add a fade to that.
-- [ ] update the stylesheet.css file so it's not so butt ugly.
+- [ ] update stylesheet for less ugliness.
