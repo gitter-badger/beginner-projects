@@ -1,0 +1,79 @@
+body {
+  font-family: "Helvetica Neue";
+  width: 600px;
+  margin: auto;
+}
+
+/*
+DIV STRUCTURE
+-------------
+*/
+
+#container {
+  background: yellow;
+}
+
+#faq_head {
+  background: white;
+  text-align: left;
+}
+
+#faq_head h1 {
+  margin-bottom: 0;
+}
+
+#faq_head p {
+  font-style: italic;
+  color: grey;
+}
+
+#faq h2 {
+  padding: 10px;
+}
+
+#right {
+  padding-right: 5%;
+  float: right;
+  width: 42.5%;
+}
+
+#left {
+  padding-left: 5%;
+  float: left;
+  width: 42.5%;
+}
+/*
+DEFINITION LISTS (Individual FAQ Items)
+---------------------------------------
+*/
+
+dl {
+
+}
+
+dd {
+  margin: 0;
+  padding: 1em 0;
+}
+
+dt {
+  cursor: crosshair;
+  font-weight: bold;
+  font-size: 1.5em;
+  background: #e3e3e3;
+  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid white;
+}
+
+/* hide borders */
+dt:first-child {
+  border-top: none;
+}
+dt:nth-last-child(2) {
+  border-bottom: none;
+}
+
+/* jQuery Classes */
+.hide {
+  display: none;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>02 | faq-page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="faq_head">
+      <h1>Frequently Asked Questions</h1>
+      <p>Below, you can find a list of frequently asked questions.</p>
+    </div> <!-- end faq head -->
+
+    <div id="faq">
+
+      <div id="right">
+        <h2>General</h2>
+        <dl>
+          <dt>What are you hours?</dt>
+          <dd>Open 24/7</dd>
+          <dt>Where are you located?</dt>
+          <dd>Germany, at the moment. You?</dd>
+          <dt>What kind of stuff do you do?</dt>
+          <dd>
+            <ul>
+                <li>Fledgling programmer.</li>
+                <li>Bodyweight fitness and swimming enthusiast</li>
+                <li>Enjoys eating well</li>
+                <li>Travels when he's able to</li>
+                <li>Reads good books</li>
+                <li>and much more...</li>
+            </ul>
+          </dd>
+        </dl>
+      </div> <!-- end right -->
+
+      <div id="left">
+        <h2>Mobile</h2>
+        <dl>
+          <dt>What platforms do you support?</dt>
+          <dd>All hail Android.</dd>
+          <dt>What?</dt>
+          <dd>Just kidding, we don't offer any mobile support.</dd>
+          <dt>What phone do you have?</dt>
+          <dd>A really old Motorola RAZR, still works good tho.</dd>
+        </dl>
+      </div> <!-- end left -->
+
+    </div> <!-- end faq -->
+  </div> <!-- end container -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    (function () {
+      $('dd').filter(':nth-child(n+4)').addClass('hide');
+      $('dl').on('mouseenter', 'dt', function() {
+        $(this)
+          .next()
+            .slideDown(200)
+            .siblings('dd')
+              .slideUp(200);
+      });
+    })();
+  </script>
+</body>
+</html>

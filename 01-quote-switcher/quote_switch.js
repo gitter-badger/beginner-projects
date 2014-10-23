@@ -12,8 +12,8 @@ var randomQuote = function(){
   var random = Math.floor(Math.random() * quotes.length);
   // picks a random number based on the length of the quote array.
   // var random MUST be local, otherwise random value will be static and not dynamic to the click.
-  $('blockquote').text(quotes[random]['content']); // sticks the content into the blockquote.
-  $('cite').text(quotes[random]['cite']); // sticks the citation into the cite.
+  $('blockquote').text("'" + quotes[random]['content'] + "'"); // sticks the content into the blockquote.
+  $('cite').text("- " + quotes[random]['cite']); // sticks the citation into the cite.
 };
 
 setInterval(randomQuote, 10000);
