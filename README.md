@@ -1,7 +1,7 @@
 # beginner-projects
 
 ## a collection of my beginner projects.
-last updated: 22.10.2014
+last updated: 24.10.2014
 
 ### table of contents
 1. quote switcher (jQuery timed loader from array)
