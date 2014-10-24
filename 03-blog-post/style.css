@@ -14,15 +14,15 @@ body {
   width: 70%;
   padding: 15px;
 }
-blockquote.qo_right, blockquote.qo_left {
+blockquote.right, blockquote.left {
   font-style: italic;
   font-size: 1.5em;
   width: 25%;
   text-align: center;
 }
-blockquote.qo_left {
+blockquote.left {
   float: left;
 }
-blockquote.qo_right {
+blockquote.right {
   float: right;
 }
