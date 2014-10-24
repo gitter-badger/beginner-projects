@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- begin container -->
+  <div id="container">
+    <!-- begin sidebar -->
+    <div id="sidebar">
+      <h1>My Blog</h1>
+      <h2>Recent Posts</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Hello World!</a></li>
+      </ul>
+    </div> <!-- end sidebar -->
+
+    <!-- begin content -->
+    <div id="content">
+      <article>
+        <h1>Hello World!</h1>
+        <h2>A short introduction...</h2>
+        <p>This is my first attempt, well not really... it's my second attempt at playing around with appending things using jQuery. I've been following the <a href="https://code.tutsplus.com/courses/30-days-to-learn-jquery">"30 Days to Learn jQuery"</a> course over at Tuts+. <span class="qo_right">It's pretty good so far.</span> It's a little dated. It was published almost 3 years ago, but a lot of the core features that it goes over have not changed. If you continue reading this, it'll simply be Lorem Ipsum, but it'll still implement features. I plan on making some quotes pull right, and some pull left. Please let me know what you think :)</p>
+        <h2>lorem ipsum dolor sit amet</h2>
+        <p>Aliquip nisi jowl, eu irure turkey ham hock fugiat nulla drumstick proident <span class="qo_left">prosciutto short loin ut excepteur.</span> Tongue excepteur adipisicing ground round minim filet mignon, laborum mollit pork chop brisket sunt id. Adipisicing short ribs cupidatat eu fugiat andouille pork chop. Sint boudin ribeye proident, exercitation prosciutto et.<p>
+          <p>Jowl spare ribs in jerky sint quis frankfurter. Consectetur pastrami kielbasa ad. Corned beef ribeye consectetur venison pastrami. Deserunt ullamco ut, in porchetta beef spare ribs biltong jerky meatball mollit proident bacon laboris. Laborum hamburger fatback, turkey ham sunt chicken deserunt pork loin shankle flank quis porchetta.<p>
+          <h2>Jelly beans pudding apple pie pastry. </h2>
+          <p>Jelly beans pudding apple pie pastry. Gummies jelly-o chocolate bar macaroon. Lemon drops cotton candy soufflé I love. I love marshmallow marzipan cake. Sweet oat cake wafer pie cotton candy liquorice. <span class="qo_right">I love dessert danish.</span> Liquorice I love I love. Sugar plum biscuit tiramisu I love chocolate cake. Gummies candy lollipop. Sweet carrot cake sesame snaps toffee. Halvah marzipan I love apple pie sesame snaps lemon drops. Lollipop I love brownie jujubes chocolate bar I love apple pie.</p>
+      </article>
+    </div><!-- end content -->
+  </div><!-- end container -->
+
+  <!-- javascript/jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  (function() {
+    var qo_right = $('article').find('span.qo_right').each(function (){
+      var $this = $(this);
+
+      $('<blockquote></blockquote>', {
+        class: 'qo_right',
+        text: $this.text()
+      }).prependTo( $this.closest('p') );
+    });
+
+    var qo_left = $('article').find('span.qo_left').each(function (){
+      var $this = $(this);
+
+      $('<blockquote></blockquote>', {
+        class: 'qo_left',
+        text: $this.text()
+      }).prependTo( $this.closest('p') );
+    });
+  })();
+  </script>
+</body>
+</html>

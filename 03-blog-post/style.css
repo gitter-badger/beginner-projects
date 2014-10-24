@@ -1,0 +1,28 @@
+body {
+  font-family: 'Helvetica Neue';
+}
+#container {
+  margin: auto;
+  width: 750px;
+}
+#sidebar{
+  width: 20%;
+  float: right;
+}
+#content {
+  float: left;
+  width: 70%;
+  padding: 15px;
+}
+blockquote.qo_right, blockquote.qo_left {
+  font-style: italic;
+  font-size: 1.5em;
+  width: 25%;
+  text-align: center;
+}
+blockquote.qo_left {
+  float: left;
+}
+blockquote.qo_right {
+  float: right;
+}
