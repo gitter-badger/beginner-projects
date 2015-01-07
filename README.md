@@ -1,5 +1,7 @@
 # beginner-projects
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/graugott/beginner-projects?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## a collection of my beginner projects.
 last updated: 24.10.2014
 
